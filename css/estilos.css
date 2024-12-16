@@ -1,12 +1,15 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-footer {
+main {
   background-color: #2eb2ff;
 }
 
 body {
   background-color: #79c7ff;
 }
+
