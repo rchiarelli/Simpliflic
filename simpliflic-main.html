@@ -10,42 +10,55 @@
 </head>
 
 <body>
-  <main>
-    <header class="cabecalho">
-      <img class="foto-cabecalho" src="src/imagens/Simpliflic logo cortada.png" alt="Foto logo">
+  <header class="cabecalho">
+    <div class="container">
+      
+      <div class="foto-container">
+        <img class="foto-cabecalho" src="src/imagens/Simpliflic logo cortada.png" alt="Foto logo">
+      </div>
+
       <nav>
         <ul class="menu">
-          <a href="#home">
-            <li>Início</li>
+          <a class="" href="#home">
+            <li><button type="">Início</button></li>
           </a>
           <a href="#quem-somos">
-            <li>Quem Somos</li>
+            <li><button type="">Informações</button></li>
           </a>
-          <a href="#sobre">
-            <li>Sobre Nós</li>
-          </a>
-          <a href="#time">
-            <li>Nosso Time</li>
-          </a>
+          <ul class="menu2">
+            <a href="#quem-somos">
+              <li><button type="">Quem Somos</button></li>
+            </a>
+            <a href="#sobre">
+              <li><button type="">Sobre Nós</button></li>
+            </a>
+            <a href="#time">
+              <li><button type="">Nosso Time</button></li>
+            </a>
+          </ul>
+
           <a href="#serv">
-            <li>Serviços</li>
+            <li><button type="">Serviços</button></li>
           </a>
-          <a href="#modalidades">
-            <li>Modalidades</li>
-          </a>
-          <a href="#programas">
-            <li>Programas</li>
-          </a>
-          <a href="#inscreva-se">
-            <li>Inscreva-se</li>
-          </a>
+          <ul class="menu2">
+            <a href="#modalidades">
+              <li><button type="">Modalidades</button></li>
+            </a>
+            <a href="#programas">
+              <li><button type="">Programas</button></li>
+            </a>
+            <a href="#inscreva-se">
+              <li><button type="">Inscreva-se</button></li>
+            </a>
+          </ul>
           <a href="#contato">
-            <li>contato</li>
+            <li><button type="">Contato</button></li>
           </a>
         </ul>
       </nav>
-    </header>
-
+    </div>
+  </header>
+  <main>
     <section id="home" class="inicio">
       <div class="nome-slogan">
         <h1>Simpliflic</h1>
@@ -65,9 +78,9 @@
       </div>
     </section>
 
-    <section class="infos-simpliflic">
+    <section id="quem-somos" class="infos-simpliflic">
       <div class="info-gerais cartao-info">
-        <div id="quem-somos">
+        <div id="quemsomos">
           <h2>
             Quem Somos
           </h2>
@@ -90,7 +103,7 @@
           </div>
         </div>
 
-        <img src="src/imagens/Simpliflick [Tamanho original].png" alt="Carrossel fotos" />
+        <img src="src/imagens/Simpliflick [Tamanho original].pn" alt="Carrossel fotos" />
         <img src="Carrosselfotos" alt="Carrossel fotos">
         <img src="Carrossel fotos" alt="Carrossel fotos">
 
@@ -263,140 +276,137 @@
         </div>
       </div>
     </section>
-
-    <footer>
-      <div id="inscreva-se">
-        <h2>
-          Inscreva-se
-        </h2>
+  </main>
+  <footer>
+    <div id="inscreva-se">
+      <h2>
+        Inscreva-se
+      </h2>
+      <div>
+        <form action="">
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Seu e-mail" />
+          </div>
+          <div>
+            <label for="celular">Celular</label>
+            <input type="number" name="celular" id="celular" placeholder="(XX)XXXXX-XXXX">
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div>
         <div>
-          <form action="">
-            <div>
-              <label for="nome">Nome:</label>
-              <input type="text" name="nome" id="nome" placeholder="Seu nome" />
-            </div>
-            <div>
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" placeholder="Seu e-mail" />
-            </div>
-            <div>
-              <label for="celular">Celular</label>
-              <input type="number" name="celular" id="celular" placeholder="(XX)XXXXX-XXXX">
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
+          <h3>FAQ</h3>
         </div>
         <div>
-          <div>
-            <h3>FAQ</h3>
-          </div>
-          <div>
-            <p>
-              Horários das aulas?
-            </p>
-          </div>
-          <div>
-            <p>
-              Resposta
-            </p>
-          </div>
-          <div>
-            <p>
-              O que levar?
-            </p>
-          </div>
-          <div>
-            <p>
-              Resposta
-            </p>
-          </div>
-          <div>
-            <p>
-              Problemas de saúde?
-            </p>
-          </div>
-          <div>
-            <p>
-              Resposta
-            </p>
-          </div>
-          <div>
-            <p>
-              Local das aulas?
-            </p>
-          </div>
-          <div>
-            <p>
-              Resposta
-            </p>
-          </div>
-          <div>
-            <p>
-              Valores dos planos?
-            </p>
-          </div>
-          <div>
-            <p>
-              Resposta
-            </p>
-          </div>
-          <div>
-            <p>
-              Formas de pagamento?
-            </p>
-          </div>
-          <div>
-            <p>
-              Resposta
-            </p>
-          </div>
+          <p>
+            Horários das aulas?
+          </p>
+        </div>
+        <div>
+          <p>
+            Resposta
+          </p>
+        </div>
+        <div>
+          <p>
+            O que levar?
+          </p>
+        </div>
+        <div>
+          <p>
+            Resposta
+          </p>
+        </div>
+        <div>
+          <p>
+            Problemas de saúde?
+          </p>
+        </div>
+        <div>
+          <p>
+            Resposta
+          </p>
+        </div>
+        <div>
+          <p>
+            Local das aulas?
+          </p>
+        </div>
+        <div>
+          <p>
+            Resposta
+          </p>
+        </div>
+        <div>
+          <p>
+            Valores dos planos?
+          </p>
+        </div>
+        <div>
+          <p>
+            Resposta
+          </p>
+        </div>
+        <div>
+          <p>
+            Formas de pagamento?
+          </p>
+        </div>
+        <div>
+          <p>
+            Resposta
+          </p>
         </div>
       </div>
+    </div>
 
-      <address id="contato">
+    <address id="contato">
+      <div>
+        <h2>
+          Contato
+        </h2>
+      </div>
+
+      <div>
         <div>
-          <h2>
-            Contato
-          </h2>
+          <p>
+            Link do localizador e mini mapa incluso no site para pontos de referência
+          </p>
         </div>
 
         <div>
+          <p>
+            Telefone para contato
+          </p>
           <div>
-            <p>
-              Link do localizador e mini mapa incluso no site para pontos de referência
-            </p>
-          </div>
-
-          <div>
-            <p>
-              Telefone para contato
-            </p>
-            <div>
-              <img src="wpp imagem" alt="wpp imagem">
-              <p>(xx)xxxxx-xxxx</p>
-            </div>
-          </div>
-
-          <div>
-            <p>
-              Redes sociais
-            </p>
-            <div>
-              <img src="imagem rede social" alt="imagem rede social">
-              <p>inta - @simpliflic</p>
-            </div>
-            <div>
-              <img src="imagem rede social" alt="imagem rede social">
-              <p>TikTok</p>
-            </div>
-            
-            
+            <img src="wpp imagem" alt="wpp imagem">
+            <p>(xx)xxxxx-xxxx</p>
           </div>
         </div>
-      </address>
-    </footer>
 
-  </main>
+        <div>
+          <p>
+            Redes sociais
+          </p>
+          <div>
+            <img src="imagem rede social" alt="imagem rede social">
+            <p>inta - @simpliflic</p>
+          </div>
+          <div>
+            <img src="imagem rede social" alt="imagem rede social">
+            <p>TikTok</p>
+          </div>
+
+
+        </div>
+      </div>
+    </address>
+  </footer>
 </body>
-
 </html>
