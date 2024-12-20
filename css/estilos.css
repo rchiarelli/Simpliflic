@@ -2,16 +2,36 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
-main {
-  background-color: #2eb2ff;
+html {
+  font-size: 62.5%;
+
 }
 
 body {
-  background-color: #79c7ff;
+  background-color: #f6f6f6;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #f6f6f6;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 .cabecalho {
@@ -19,11 +39,10 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: #79c7ff;
+  background-color: #78c7ff;
 }
 
 .container {
-
   display: flex;
   flex-flow: wrap;
   gap: 1rem;
@@ -55,6 +74,7 @@ a {
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.13);
   padding: 0.5rem;
   background-color: #79c7ff;
+  font-size: 1rem;
 }
 
 .menu2 {
@@ -66,6 +86,97 @@ a {
 
 .menu a:visited {}
 
-.menu a:hover {}
+.menu button:hover {
+  color: red;
+}
 
 .menu a:active {}
+
+/*Seção Início*/
+
+
+.secao {
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  align-items: center;
+  max-width: 100rem;
+  min-width: 35rem;
+  width: 75%;
+  margin: 3rem auto 5rem auto;
+  background-color: #2AD1E8;
+  box-shadow: 0 0 0.1rem 0.15rem rgba(0, 0, 0, 0.1)
+}
+
+.secao-inicio {}
+
+.nome-slogan {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.nome-slogan :first-child {
+  align-self: center;
+}
+
+.nome-slogan :last-child {
+  align-self: center;
+}
+
+.txt-inicio {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  width: fit-content;
+}
+
+.txt-inicio p:nth-child(1) {
+  align-self: flex-start;
+}
+
+.txt-inicio p:nth-child(2) {
+  align-self: flex-end;
+}
+
+.txt-inicio p {
+  width: 50%;
+}
+
+/*Seção Quem Somos*/
+
+.container-quem-somos {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.titulo-quem-somos {
+  border: solid;
+}
+
+.container-p-quem-somos {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  text-align: center;
+}
+
+.primeiro-p-quem-somos {
+  border: solid;
+  width: 30rem;
+}
+
+.segundo-p-quem-somos {
+  border: solid;
+}
+
+.terceiro-p-quem-somos {
+  border: solid;
+}
