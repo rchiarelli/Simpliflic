@@ -9,10 +9,6 @@ html {
 
 }
 
-main {
-  /*background-color: #2eb2ff;*/
-}
-
 body {
   background-color: #f6f6f6;
   font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +23,6 @@ body {
 }
 
 .container {
-
   display: flex;
   flex-flow: wrap;
   gap: 1rem;
@@ -71,7 +66,9 @@ a {
 
 .menu a:visited {}
 
-.menu a:hover {}
+.menu button:hover {
+  color: red;
+}
 
 .menu a:active {}
 
