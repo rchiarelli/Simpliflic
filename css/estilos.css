@@ -32,6 +32,7 @@ h3 {
 
 p {
   font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .cabecalho {
@@ -149,34 +150,68 @@ a {
 
 .container-quem-somos {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  align-items: center;
   gap: 2rem;
-  justify-content: center;
-}
-
-.titulo-quem-somos {
-  border: solid;
 }
 
 .container-p-quem-somos {
   display: flex;
   flex-flow: column;
   gap: 2rem;
-  justify-content: center;
   align-items: center;
-  border: solid;
   text-align: center;
 }
 
-.primeiro-p-quem-somos {
-  border: solid;
-  width: 30rem;
-}
-
 .segundo-p-quem-somos {
-  border: solid;
+  width: 40%;
 }
 
-.terceiro-p-quem-somos {
-  border: solid;
+.carrossel {
+  display: flex;
+  gap: 2rem;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.img-carrossel img {
+  width: 100%;
+  height: auto;
+}
+
+.cartao-info {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.img-equipe {
+  display: flex;
+  gap: 2rem;
+  width: 50%;
+  margin: auto;
+}
+
+.p-sobre-nos {
+  line-height: 1.6;
+}
+
+.cartao-time {
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.profissional {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bio {
+  text-align: justify;
 }
