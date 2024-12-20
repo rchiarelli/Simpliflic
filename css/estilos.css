@@ -5,17 +5,33 @@
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-}
-
-main {
-  /*background-color: #2eb2ff;*/
 }
 
 body {
   background-color: #f6f6f6;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #f6f6f6;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 .cabecalho {
@@ -77,31 +93,89 @@ a {
 
 /*Seção Início*/
 
+
 .secao {
-  border: solid;
   border-radius: 2rem;
-  min-width: 35rem;
-  max-width: 75%;
-  margin: 3rem auto;
   padding: 3rem;
- /* background-color: #2eb2ff;*/
-  background-image: linear-gradient(to bottom, #2eb2ff, #78ffef);
-  box-shadow: 0 0 0.5rem 0.4rem rgba(68, 113, 145, 0.23);
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  align-items: center;
+  max-width: 100rem;
+  min-width: 35rem;
+  width: 75%;
+  margin: 3rem auto 5rem auto;
+  background-color: #2AD1E8;
+  box-shadow: 0 0 0.1rem 0.15rem rgba(0, 0, 0, 0.1)
 }
 
-h1 {
+.secao-inicio {}
+
+.nome-slogan {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.nome-slogan :first-child {
+  align-self: center;
+}
+
+.nome-slogan :last-child {
+  align-self: center;
+}
+
+.txt-inicio {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  width: fit-content;
+}
+
+.txt-inicio p:nth-child(1) {
+  align-self: flex-start;
+}
+
+.txt-inicio p:nth-child(2) {
+  align-self: flex-end;
+}
+
+.txt-inicio p {
+  width: 50%;
+}
+
+/*Seção Quem Somos*/
+
+.container-quem-somos {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.titulo-quem-somos {
+  border: solid;
+}
+
+.container-p-quem-somos {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border: solid;
   text-align: center;
-  font-size: 3.2rem;
 }
 
-h2, h3 {
-  font-size: 2.4rem;
+.primeiro-p-quem-somos {
+  border: solid;
+  width: 30rem;
 }
 
-p, em, strong {
-  font-size: 1.6rem;
+.segundo-p-quem-somos {
+  border: solid;
 }
 
-.secao h1, .secao h2, .secao p {
-  margin-bottom: 1rem;
+.terceiro-p-quem-somos {
+  border: solid;
 }
