@@ -170,7 +170,7 @@ a {
 .carrossel {
   display: flex;
   gap: 2rem;
-  width: 40rem;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   margin: 5rem auto;
@@ -179,6 +179,10 @@ a {
 .img-carrossel img {
   width: 100%;
   height: auto;
+}
+
+.img-carrossel:nth-child(2) {
+  order: 1;
 }
 
 .cartao-info {
@@ -202,13 +206,31 @@ a {
 .cartao-time {
   display: flex;
   flex-flow: column;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
+}
+
+.titulo-time {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.conteudo-profissional {
+  display: flex;
+  gap: 3rem;
 }
 
 .profissional {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-around;
+  width: 100%;
+}
+
+.foto-profissional img{
+  border: solid;
   width: 100%;
 }
 
