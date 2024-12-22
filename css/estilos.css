@@ -246,7 +246,10 @@ a {
 /* Seção Serviços */
 
 .container-servicos {
+  display: flex;
+  flex-flow: column nowrap;
   border: solid;
+  width: 100%;
 }
 
 .titulo-servicos {
@@ -259,27 +262,29 @@ a {
 .produtos {
   display: grid;
   width: 100%;
-  grid-auto-flow: ;
-  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .titulo-modalidades {
-  border: solid;
-  display: flex;
   width: fit-content;
-  grid-area: 2 / 3 / -2 / -3;
+  grid-area: 2;
   /* position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%); */
 }
 
-.info-modalidade {
+.info-modalidade, .titulo-modalidades {
   border: solid 0.2rem;
-  display: flex;
-  flex-flow: column;
-  width: fit-content;
+  position: relative;
+  /*display: flex;
+  flex-flow: column;*/
 }
 
 .info-modalidade p {
@@ -288,12 +293,18 @@ a {
 
 .info-modalidade:hover p {
   display: block;
-}
-
-.info-kids{
+  position: absolute;
+  background-color: white;
+  z-index: 2;
 }
 
 .info-kids {
-  grid-area: ;
-  width: fit-content;
+  grid-area: 1/1;
+}
+
+.info-teens {
+}
+
+.info-adultos {
+  grid-area: 2/2;
 }
