@@ -67,6 +67,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .menu button {
@@ -146,7 +147,7 @@ a {
   width: 50%;
 }
 
-/*Seção Quem Somos*/
+/*Seção Informações*/
 
 .container-quem-somos {
   display: flex;
@@ -208,32 +209,91 @@ a {
   flex-flow: column;
   gap: 3rem;
   align-items: center;
+  width: 100%;
 }
 
 .titulo-time {
   display: flex;
   flex-flow: column;
   gap: 2rem;
-  align-items: center;
+  text-align: center;
 }
 
 .conteudo-profissional {
   display: flex;
   gap: 3rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .profissional {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
+  width: fit-content;
 }
 
 .foto-profissional img{
-  border: solid;
   width: 100%;
 }
 
 .bio {
   text-align: justify;
+  width: 90rem;
+}
+
+/* Seção Serviços */
+
+.container-servicos {
+  border: solid;
+}
+
+.titulo-servicos {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: ;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.titulo-modalidades {
+  border: solid;
+  display: flex;
+  width: fit-content;
+  grid-area: 2 / 3 / -2 / -3;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%); */
+}
+
+.info-modalidade {
+  border: solid 0.2rem;
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+}
+
+.info-modalidade p {
+  display: none;
+}
+
+.info-modalidade:hover p {
+  display: block;
+}
+
+.info-kids{
+}
+
+.info-kids {
+  grid-area: ;
+  width: fit-content;
 }
